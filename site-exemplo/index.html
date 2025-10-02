@@ -1,21 +1,22 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu primeiro site em repositório</title>
-</head>
-<body>
-    <h1>Olá, Mundo!</h1>
-    <hr>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        Quaerat tempora alias accusamus quibusdam modi facilis. 
-        Eveniet quia, fugiat vel iure ipsam atque sed omnis ducimus 
-        quod! Non repellendus omnis praesentium.</p>
-        
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-             Enim quae ut vitae quas nulla delectus porro rerum magnam
-              eius cupiditate! Atque expedita nulla dignissimos 
-              excepturi unde quaerat libero voluptatum aliquam!</p>
-</body>
+# 1. crie o index.html com conteúdo mínimo
+cat > index.html <<'HTML'
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Olá, Mundo!</title>
+  </head>
+  <body>
+    <h1>Site de teste do site Olá, Mundo!</h1>
+    <p>Se você está vendo isso, o GitHub Pages funcionou! 🚀</p>
+  </body>
 </html>
+HTML
+
+# 2. inicializar git (se ainda não tiver) e enviar para o GitHub
+git init
+git add .
+git commit -m "site inicial para GitHub Pages"
+git branch -M main
+git remote add origin https://github.com/SEU-USUARIO/NOME-DO-REPOSITORIO.git
+git push -u origin main
